@@ -1,0 +1,51 @@
+<html><head><meta charset='utf-8'><title>DLRM trace analysis</title></head><body>
+<h2>DLRM trace analysis</h2><p>Generated at 2025-08-12 17:26:25</p>
+<h3>Dataset scope</h3>
+<ul>
+<li>Rows 23871, columns 17, apps 156</li>
+<li>Role split, CN 16485 and HN 7386</li>
+<li>GPU backed share 30.94%</li>
+</ul>
+<h3>Key medians by role</h3>
+<ul>
+<li>CN median, CPU 64 vCPUs, memory 320 GiB, RDMA 1 percent</li>
+<li>HN median, CPU 8 vCPUs, memory 40 GiB, GPU 1, RDMA 25 percent</li>
+</ul>
+<h3>Correlations</h3>
+<p>CPU to memory 0.987, GPU to RDMA 0.173</p>
+<h3>Density and placement</h3>
+<p>Mode of max_instance_per_node -1, share with no limit 51.31%</p>
+<h3>Timing behavior</h3>
+<ul>
+<li>Schedule delay p50 0s, p90 59s, p95 2m 16s</li>
+<li>Runtime p50 2h 17m 58s, p90 3d 7h 39m 47s, p95 7d 1h 50m 50s</li>
+<li>Missing counts, creation NaN 7280, scheduled NaN 7280, deletion NaN 8878</li>
+</ul>
+<h3>Figures</h3><ul>
+<li><a href="figures/arrivals_and_departures_over_time.png" target="_blank">arrivals_and_departures_over_time.png</a></li>
+<li><a href="figures/concurrency_over_time.png" target="_blank">concurrency_over_time.png</a></li>
+<li><a href="figures/correlation_heatmap.png" target="_blank">correlation_heatmap.png</a></li>
+<li><a href="figures/cpu_by_role_box.png" target="_blank">cpu_by_role_box.png</a></li>
+<li><a href="figures/cpu_request_hist.png" target="_blank">cpu_request_hist.png</a></li>
+<li><a href="figures/cpu_vs_memory_scatter.png" target="_blank">cpu_vs_memory_scatter.png</a></li>
+<li><a href="figures/disk_request_hist.png" target="_blank">disk_request_hist.png</a></li>
+<li><a href="figures/gpu_request_hist.png" target="_blank">gpu_request_hist.png</a></li>
+<li><a href="figures/memory_by_role_box.png" target="_blank">memory_by_role_box.png</a></li>
+<li><a href="figures/memory_request_hist.png" target="_blank">memory_request_hist.png</a></li>
+<li><a href="figures/rdma_distribution_by_role.png" target="_blank">rdma_distribution_by_role.png</a></li>
+<li><a href="figures/rdma_request_hist.png" target="_blank">rdma_request_hist.png</a></li>
+<li><a href="figures/runtime_hist.png" target="_blank">runtime_hist.png</a></li>
+<li><a href="figures/schedule_delay_hist.png" target="_blank">schedule_delay_hist.png</a></li>
+</ul>
+<h3>Tables</h3><ul>
+<li><a href="arrivals_per_hour.csv" target="_blank">arrivals_per_hour.csv</a></li>
+<li><a href="concurrency_over_time.csv" target="_blank">concurrency_over_time.csv</a></li>
+<li><a href="correlation_matrix.csv" target="_blank">correlation_matrix.csv</a></li>
+<li><a href="departures_per_hour.csv" target="_blank">departures_per_hour.csv</a></li>
+<li><a href="max_instance_per_node_counts.csv" target="_blank">max_instance_per_node_counts.csv</a></li>
+<li><a href="overall_resource_stats.csv" target="_blank">overall_resource_stats.csv</a></li>
+<li><a href="per_app_aggregates.csv" target="_blank">per_app_aggregates.csv</a></li>
+<li><a href="per_role_resource_stats.csv" target="_blank">per_role_resource_stats.csv</a></li>
+<li><a href="time_summaries.csv" target="_blank">time_summaries.csv</a></li>
+</ul>
+</body></html>
